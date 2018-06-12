@@ -8,6 +8,9 @@ import NodeIcon from '../assets/images/icons/node.svg'
 import Postgres from '../assets/images/icons/postgres.svg'
 import ReactIcon from '../assets/images/icons/react.svg'
 import Redux from '../assets/images/icons/redux.png'
+import SASS from '../assets/images/icons/sass.png'
+import AWSS3 from '../assets/images/icons/awss3.png'
+import Sockets from '../assets/images/icons/sockets.svg'
 
 function Skills(props){
     return(
@@ -22,7 +25,7 @@ function Skills(props){
             <div className="icon-container">
                 <span className="image main icon"><img src={Javascript} alt="Javascript Icon" /></span>
                 <br />
-                <p>Javascript</p>
+                <p>JAVASCRIPT</p>
             </div>
             <div className="icon-container">
                 <span className="image main icon"><img src={HTML} alt="HTML Icon" /></span>
@@ -32,32 +35,47 @@ function Skills(props){
             <div className="icon-container">
                 <span className="image main icon"><img src={Express} alt="Express Icon" /></span>
                 <br />
-                <p>Express</p>
+                <p>EXPRESS</p>
             </div>
             <div className="icon-container">
                 <span className="image main icon"><img src={Git} alt="Git Icon" /></span>
                 <br />
-                <p>Git</p>
+                <p>GIT</p>
             </div>
             <div className="icon-container">
                 <span className="image main icon"><img src={NodeIcon} alt="Node Icon" /></span>
                 <br />
-                <p>Node</p>
+                <p>NODE.JS</p>
             </div>
             <div className="icon-container">
                 <span className="image main icon"><img src={Postgres} alt="Postgres Icon" /></span>
                 <br />
-                <p>PostgreSQL</p>
+                <p>POSTGRESQL</p>
             </div>
             <div className="icon-container">
                 <span className="image main icon"><img src={ReactIcon} alt="React Icon" /></span>
                 <br />
-                <p>React</p>
+                <p>REACT</p>
             </div>
             <div className="icon-container">
                 <span className="image main icon"><img src={Redux} alt="Redux Icon" /></span>
                 <br />
-                <p>Redux</p>
+                <p>REDUX</p>
+            </div>
+            <div className="icon-container">
+                <span className="image main icon sass"><img src={SASS} alt="SASS Icon" /></span>
+                <br />
+                <p>SASS</p>
+            </div>
+            <div className="icon-container">
+                <span className="image main icon"><img src={AWSS3} alt="AWS S3 Icon" /></span>
+                <br />
+                <p>AWS S3</p>
+            </div>
+            <div className="icon-container">
+                <span className="image main sockets icon"><img src={Sockets} alt="Sockets.io Icon" /></span>
+                <br />
+                <p>SOCKETS.IO</p>
             </div>
           </section>
           {props.close}

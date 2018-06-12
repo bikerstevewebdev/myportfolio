@@ -73,13 +73,13 @@ class Template extends Component {
   }
 
   render() {
-    const { location, children } = this.props
+    // const { location, children } = this.props
 
-    let rootPath = `/`
+    // let rootPath = `/`
 
     let content;
 
-    if (location.pathname === rootPath) {
+    // if (location.pathname === rootPath) {
       content = (
         <div onClick={this.state.isArticleVisible ? this.handleCloseArticle : null}  id="wrapper">
           <Header
@@ -97,17 +97,17 @@ class Template extends Component {
           <Footer timeout={this.state.timeout} />
         </div>
       )
-    } else {
-      content = (
-        <div onClick={this.state.isArticleVisible ? this.handleCloseArticle : null} id="wrapper" className="page">
-          <div style={{
-            maxWidth: '1140px'
-          }}>
-            {children()}
-          </div>
-        </div>
-      )
-    }
+    // } else {
+    //   content = (
+    //     <div onClick={this.state.isArticleVisible ? this.handleCloseArticle : null} id="wrapper" className="page">
+    //       <div style={{
+    //         maxWidth: '1140px'
+    //       }}>
+    //         {children()}
+    //       </div>
+    //     </div>
+    //   )
+    // }
 
     return (
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
