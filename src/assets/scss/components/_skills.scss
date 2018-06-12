@@ -1,0 +1,23 @@
+#skills{
+    .icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 10rem;
+    align-items: center;
+    justify-items: center;
+    .icon-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        }
+    }
+}
+@media (max-width: 550px){
+    #skills{
+        .icons{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

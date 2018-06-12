@@ -1,0 +1,24 @@
+///
+/// Dimension by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+	}
+	// span.icon.fas.fa-laptop::after {
+	// 	font-family: "Font Awesome 5 Solid";
+	// 	content: "\f44b";
+	// 	position: absolute;
+	// 	left: 11px;
+	// 	top: -41px;
+	// }

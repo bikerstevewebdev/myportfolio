@@ -1,0 +1,38 @@
+#contact{
+    ul.icons{
+        position: absolute;
+        right: 6rem;
+        width: 8rem;
+        bottom: 4.35rem;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 736px){
+    #contact{
+        ul.icons{
+            bottom: 3.35rem;
+        }
+    }
+}
+@media (max-width: 595px){
+    #contact{
+        ul.icons{
+            margin-left: 60%;
+            right: unset;
+            // right: 10.5vw;
+        }
+    }
+}
+@media (max-width: 480px){
+    #contact{
+        ul.icons{
+            position: relative;
+            bottom: unset;
+            margin: 2rem auto;
+            // margin-left: 10%;
+            // right: 8.5vw;
+        }
+    }
+}

@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Template from './layouts'
+import { Route } from 'react-router-dom'
+import { withRouter } from 'react-router'
+import PropTypes from 'prop-types'
+
 
 class App extends Component {
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  }
+  
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Route path="/" render={() => <Template location={this.props.location}/> } />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default withRouter(App)

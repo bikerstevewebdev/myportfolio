@@ -1,0 +1,67 @@
+@keyframes imageCarousel{
+    0%{
+        background-image: url("./life-inbalance-dashboard.PNG");
+    }
+    50%{
+        background-image: url("./life-inbalance-workout.PNG");
+    }
+    100%{
+        background-image: url("./life-inbalance-dashboard.PNG");
+    }
+}
+@keyframes groupImgCarousel{
+    0%{
+        background-image: url("./pinetree-clone-welcome.PNG");
+    }
+    33%{
+        background-image: url("./pinetree-clone-condo-form.PNG");
+    }
+    66%{
+        background-image: url("./pinetree-clone-booking-start.PNG");
+    }
+    100%{
+        background-image: url("./pinetree-clone-welcome.PNG");
+    }
+}
+.life-inbalanceimages{
+    animation: imageCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
+    width: 407px;
+    height: 198px;
+    background-size: cover;
+    background-position: center;
+    margin: 1rem auto;
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pinetree-clone-images{
+    animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
+    width: 407px;
+    height: 198px;
+    background-size: cover;
+    background-position: center;
+    margin: 1rem auto;
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 736px){
+    .pinetree-clone-images, .life-inbalanceimages{
+        height: 175px;
+        width: 359px;
+    }
+}
+@media (max-width: 536px){
+    .pinetree-clone-images, .life-inbalanceimages{
+        height: 150px;
+        width: 308px;
+    }
+}
+@media (max-width: 450px){
+    .pinetree-clone-images, .life-inbalanceimages{
+        height: 100px;
+        width: 211px;
+    }
+}
