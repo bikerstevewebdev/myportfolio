@@ -23,45 +23,58 @@
         background-image: url("./pinetree-clone-welcome.PNG");
     }
 }
-.life-inbalanceimages{
-    animation: imageCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
-    width: 407px;
-    height: 198px;
-    background-size: cover;
-    background-position: center;
-    margin: 1rem auto;
-    border-radius: 1px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.pinetree-clone-images{
-    animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
-    width: 407px;
-    height: 198px;
-    background-size: cover;
-    background-position: center;
-    margin: 1rem auto;
-    border-radius: 1px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-@media (max-width: 736px){
-    .pinetree-clone-images, .life-inbalanceimages{
-        height: 175px;
-        width: 359px;
+#projects{
+    .life-inbalanceimages{
+        animation: imageCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
+        width: 407px;
+        height: 198px;
+        background-size: cover;
+        background-position: center;
+        margin: 1rem auto;
+        border-radius: 1px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-}
-@media (max-width: 536px){
-    .pinetree-clone-images, .life-inbalanceimages{
-        height: 150px;
-        width: 308px;
+    .pinetree-clone-images{
+        animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
+        width: 407px;
+        height: 198px;
+        background-size: cover;
+        background-position: center;
+        margin: 1rem auto;
+        border-radius: 1px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-}
-@media (max-width: 450px){
-    .pinetree-clone-images, .life-inbalanceimages{
-        height: 100px;
-        width: 211px;
+    .project-head{
+        display: flex;
+        // width: 45%;
+        justify-content: flex-start;
+    }
+    #blife-github, #blife-link, #pinetree-github, #pinetree-link{
+        margin-left: 1rem;
+        &:hover{
+            color: green;
+        }
+    }
+    @media (max-width: 736px){
+        .pinetree-clone-images, .life-inbalanceimages{
+            height: 175px;
+            width: 359px;
+        }
+    }
+    @media (max-width: 536px){
+        .pinetree-clone-images, .life-inbalanceimages{
+            height: 150px;
+            width: 308px;
+        }
+    }
+    @media (max-width: 450px){
+        .pinetree-clone-images, .life-inbalanceimages{
+            height: 100px;
+            width: 211px;
+        }
     }
 }

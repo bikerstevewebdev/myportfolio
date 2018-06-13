@@ -1,11 +1,9 @@
 import React from 'react'
 
 const Header = (props) => (
-    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
+    <header id="header" style={props.timeout ? {position: "fixed"} : {}}>
         <div className="logo">
-            <span className="icon fas fa-laptop"></span>
-            {/* <span className="icon fas fa-dumbbell"></span> */}
-            
+            <span className="icon fas fa-laptop"></span>            
         </div>
         <div className="content">
             <div className="inner">

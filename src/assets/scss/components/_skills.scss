@@ -3,20 +3,32 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 10rem;
-    align-items: center;
-    justify-items: center;
-    .icon-container{
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        .sass{
-            padding-top: 1.5rem
-        }
-        .sockets{
-            padding-top: 0.5rem;
-        }
+        justify-items: center;
+        .icon-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            .sass{
+                padding-top: 1.5rem
+            }
+            .sockets{
+                padding-top: 0.5rem;
+            }
+            &.cypress{
+                grid-area: 5/1/6/3;
+                .icon{
+                    padding-top: 0.5rem;
+                }
+            }
+            &.jest{
+                grid-area: 5/2/6/4;
+            }
+            .express, .postgresql, .react, .redux{
+                padding-top: 0.5rem;
+            }
         }
     }
 }
@@ -24,6 +36,11 @@
     #skills{
         .icons{
             grid-template-columns: 1fr 1fr;
+            .icon-container{
+                &.jest, &.cypress{
+                    grid-area: unset;
+                }
+            }
         }
     }
 }

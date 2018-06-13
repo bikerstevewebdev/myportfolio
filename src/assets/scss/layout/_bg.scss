@@ -10,6 +10,7 @@
 		@include vendor('transform', 'scale(1.0)');
 		-webkit-backface-visibility: hidden;
 		position: fixed;
+		transition: transform 0.32s ease-in-out;
 		top: 0;
 		left: 0;
 		width: 100%;

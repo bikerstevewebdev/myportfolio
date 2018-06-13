@@ -73,13 +73,7 @@ class Template extends Component {
   }
 
   render() {
-    // const { location, children } = this.props
-
-    // let rootPath = `/`
-
     let content;
-
-    // if (location.pathname === rootPath) {
       content = (
         <div onClick={this.state.isArticleVisible ? this.handleCloseArticle : null}  id="wrapper">
           <Header

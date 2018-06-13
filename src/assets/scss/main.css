@@ -53,21 +53,9 @@ body {
 
 body {
   background: #1b1f22; }
-  body.is-loading *, body.is-loading *:before, body.is-loading *:after,
-  body .body.is-loading *,
-  body .body.is-loading *:before,
-  body .body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
+  body #bg.is-switching:before, body #bg:after {
     animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
     transition: none !important;
-    -moz-transition-delay: none !important;
-    -webkit-transition-delay: none !important;
-    -ms-transition-delay: none !important;
     transition-delay: none !important; }
 
 /* Type */
@@ -768,10 +756,20 @@ button {
       padding-top: 1.5rem; }
     #skills .icons .icon-container .sockets {
       padding-top: 0.5rem; }
+    #skills .icons .icon-container.cypress {
+      grid-area: 5/1/6/3; }
+      #skills .icons .icon-container.cypress .icon {
+        padding-top: 0.5rem; }
+    #skills .icons .icon-container.jest {
+      grid-area: 5/2/6/4; }
+    #skills .icons .icon-container .express, #skills .icons .icon-container .postgresql, #skills .icons .icon-container .react, #skills .icons .icon-container .redux {
+      padding-top: 0.5rem; }
 
 @media (max-width: 550px) {
   #skills .icons {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+    #skills .icons .icon-container.jest, #skills .icons .icon-container.cypress {
+      grid-area: unset; } }
 
 @keyframes imageCarousel {
   0% {
@@ -791,7 +789,7 @@ button {
   100% {
     background-image: url("./pinetree-clone-welcome.PNG"); } }
 
-.life-inbalanceimages {
+#projects .life-inbalanceimages {
   animation: imageCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
   width: 407px;
   height: 198px;
@@ -803,7 +801,7 @@ button {
   justify-content: space-around;
   align-items: center; }
 
-.pinetree-clone-images {
+#projects .pinetree-clone-images {
   animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
   width: 407px;
   height: 198px;
@@ -815,18 +813,27 @@ button {
   justify-content: space-around;
   align-items: center; }
 
+#projects .project-head {
+  display: flex;
+  justify-content: flex-start; }
+
+#projects #blife-github, #projects #blife-link, #projects #pinetree-github, #projects #pinetree-link {
+  margin-left: 1rem; }
+  #projects #blife-github:hover, #projects #blife-link:hover, #projects #pinetree-github:hover, #projects #pinetree-link:hover {
+    color: green; }
+
 @media (max-width: 736px) {
-  .pinetree-clone-images, .life-inbalanceimages {
+  #projects .pinetree-clone-images, #projects .life-inbalanceimages {
     height: 175px;
     width: 359px; } }
 
 @media (max-width: 536px) {
-  .pinetree-clone-images, .life-inbalanceimages {
+  #projects .pinetree-clone-images, #projects .life-inbalanceimages {
     height: 150px;
     width: 308px; } }
 
 @media (max-width: 450px) {
-  .pinetree-clone-images, .life-inbalanceimages {
+  #projects .pinetree-clone-images, #projects .life-inbalanceimages {
     height: 100px;
     width: 211px; } }
 
@@ -862,6 +869,7 @@ button {
   transform: scale(1.0);
   -webkit-backface-visibility: hidden;
   position: fixed;
+  transition: transform 0.32s ease-in-out;
   top: 0;
   left: 0;
   width: 100%;
@@ -970,10 +978,10 @@ button {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter  ease-in-out, opacity 0.325s ease-in-out;
+  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter  ease-in-out, opacity 0.325s ease-in-out;
+  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter  ease-in-out, opacity 0.325s ease-in-out;
+  transition: transform 0.325s ease-in-out, filter  ease-in-out, opacity 0.325s ease-in-out;
   background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
   background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
   background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
