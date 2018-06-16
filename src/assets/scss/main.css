@@ -782,13 +782,13 @@ button {
 
 @keyframes groupImgCarousel {
   0% {
-    background-image: url("./pinetree-clone-welcome.PNG"); }
+    background-image: url("./condorental-clone-welcome.PNG"); }
   33% {
-    background-image: url("./pinetree-clone-condo-form.PNG"); }
+    background-image: url("./condorental-clone-condo-form.PNG"); }
   66% {
-    background-image: url("./pinetree-clone-booking-start.PNG"); }
+    background-image: url("./condorental-clone-booking-start.PNG"); }
   100% {
-    background-image: url("./pinetree-clone-welcome.PNG"); } }
+    background-image: url("./condorental-clone-welcome.PNG"); } }
 
 #projects .life-inbalanceimages {
   animation: imageCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
@@ -802,7 +802,7 @@ button {
   justify-content: space-around;
   align-items: center; }
 
-#projects .pinetree-clone-images {
+#projects .condo-rental-clone-images {
   animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
   width: 407px;
   height: 198px;
@@ -818,23 +818,23 @@ button {
   display: flex;
   justify-content: flex-start; }
 
-#projects #blife-github, #projects #blife-link, #projects #pinetree-github, #projects #pinetree-link {
+#projects #blife-github, #projects #blife-link, #projects #condorental-github, #projects #condorental-link {
   margin-left: 1rem; }
-  #projects #blife-github:hover, #projects #blife-link:hover, #projects #pinetree-github:hover, #projects #pinetree-link:hover {
+  #projects #blife-github:hover, #projects #blife-link:hover, #projects #condorental-github:hover, #projects #condorental-link:hover {
     color: green; }
 
 @media (max-width: 736px) {
-  #projects .pinetree-clone-images, #projects .life-inbalanceimages {
+  #projects .condo-rental-clone-images, #projects .life-inbalanceimages {
     height: 175px;
     width: 359px; } }
 
 @media (max-width: 536px) {
-  #projects .pinetree-clone-images, #projects .life-inbalanceimages {
+  #projects .condo-rental-clone-images, #projects .life-inbalanceimages {
     height: 150px;
     width: 308px; } }
 
 @media (max-width: 450px) {
-  #projects .pinetree-clone-images, #projects .life-inbalanceimages {
+  #projects .condo-rental-clone-images, #projects .life-inbalanceimages {
     height: 100px;
     width: 211px; } }
 

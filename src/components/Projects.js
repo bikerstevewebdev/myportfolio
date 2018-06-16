@@ -16,12 +16,12 @@ function Projects(props){
           <p>With the use of Charts.js, a user is able to monitor their progress on multiple levels. Amazon Web Service's S3 provides the ability to upload progress photos directly from the user's phone to then compare side by side in a comparison modal.</p>
           <p>On top of basic user capabilities, there is a coaching feature built in to allow a user to request to become a coach. Upon a coach request being accepted by an admin, the coach can then create a nutrition and fitness plan for the client once a coach sends a user an invite to be there client. Finally, since communication is key in a client's success, Socket.io allows for direct communication between a coach and client with live updating.</p>
           <div className="project-head">
-            <h3>Pine Tree Clone</h3>
-            <a href="https://github.com/devmtn-pinetree-clone/pinetree-clone" rel="noopener noreferrer" id="pinetree-github" target="_blank" className="icon fa-github"><span className="label">Pinetree Clone GitHub</span></a>
-            <a href="https://pinetreeclone.stevecodes.com" rel="noopener noreferrer" id="pinetree-link" target="_blank" className="icon fa-link"><span className="label">Pinetree Clone Site</span></a>
+            <h3>Condo Rental Clone</h3>
+            <a href="https://github.com/devmtn-pinetree-clone/pinetree-clone" rel="noopener noreferrer" id="condorental-github" target="_blank" className="icon fa-github"><span className="label">Condo Rental Clone GitHub</span></a>
+            <a href="https://condorentalclone.stevecodes.com" rel="noopener noreferrer" id="condorental-link" target="_blank" className="icon fa-link"><span className="label">Condo Rental Site</span></a>
           </div>
           <p>Awwwards Site Winner Clone - Group Project</p>
-          <a href="http://www.pinetreeclone.stevecodes.com" rel="noopener noreferrer" target="_blank"><div className="pinetree-clone-images" /></a>
+          <a href="https://www.condorentalclone.stevecodes.com" rel="noopener noreferrer" target="_blank"><div className="condo-rental-clone-images" /></a>
           <p>As a group, myself, Donnell Harris and Ricardo Carosa set out to enhance our CSS skills and strengthen our abilities to work as a team towards one common goal of a finished project with a fairly aggressive deadline. This project taught us how to work together under high amounts of pressure.</p>
           <p>The majority of work was done with CSS, and more specifically SASS. With a long road of styling ahead of us, we decided to learn the advantages of SASS to help reduce repetetive CSS code as well as protect our code from being overwritten by group member's similarly named classes. On top of the heavy CSS work, we made it a goal to achieve responsiveness being that the demand for mobile capabilities is only increasing.</p>
           <p>To increase the level of difficulty of the project, we decided as a team to include the ability to edit the apartments available. In order to add an apartment, an admin would need an image for the avatar which is where AWS S3 provides the opportunity to upload an image directly from the admin's computer. The image link is then stored in a PostgreSQL database upon saving the apartment information.</p>

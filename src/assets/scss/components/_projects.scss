@@ -11,16 +11,16 @@
 }
 @keyframes groupImgCarousel{
     0%{
-        background-image: url("./pinetree-clone-welcome.PNG");
+        background-image: url("./condorental-clone-welcome.PNG");
     }
     33%{
-        background-image: url("./pinetree-clone-condo-form.PNG");
+        background-image: url("./condorental-clone-condo-form.PNG");
     }
     66%{
-        background-image: url("./pinetree-clone-booking-start.PNG");
+        background-image: url("./condorental-clone-booking-start.PNG");
     }
     100%{
-        background-image: url("./pinetree-clone-welcome.PNG");
+        background-image: url("./condorental-clone-welcome.PNG");
     }
 }
 #projects{
@@ -36,7 +36,7 @@
         justify-content: space-around;
         align-items: center;
     }
-    .pinetree-clone-images{
+    .condo-rental-clone-images{
         animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.320, 1);
         width: 407px;
         height: 198px;
@@ -53,26 +53,26 @@
         // width: 45%;
         justify-content: flex-start;
     }
-    #blife-github, #blife-link, #pinetree-github, #pinetree-link{
+    #blife-github, #blife-link, #condorental-github, #condorental-link{
         margin-left: 1rem;
         &:hover{
             color: green;
         }
     }
     @media (max-width: 736px){
-        .pinetree-clone-images, .life-inbalanceimages{
+        .condo-rental-clone-images, .life-inbalanceimages{
             height: 175px;
             width: 359px;
         }
     }
     @media (max-width: 536px){
-        .pinetree-clone-images, .life-inbalanceimages{
+        .condo-rental-clone-images, .life-inbalanceimages{
             height: 150px;
             width: 308px;
         }
     }
     @media (max-width: 450px){
-        .pinetree-clone-images, .life-inbalanceimages{
+        .condo-rental-clone-images, .life-inbalanceimages{
             height: 100px;
             width: 211px;
         }
