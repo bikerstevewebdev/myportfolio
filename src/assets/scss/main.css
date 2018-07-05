@@ -780,6 +780,14 @@ button {
   100% {
     background-image: url("./life-inbalance-dashboard.PNG"); } }
 
+@keyframes tbIMGCarousel {
+  0% {
+    background-image: url("../images/trail_buddy_mobile.PNG"); }
+  50% {
+    background-image: url("../images/trail_buddy_desktop.PNG"); }
+  100% {
+    background-image: url("../images/trail_buddy_mobile.PNG"); } }
+
 @keyframes groupImgCarousel {
   0% {
     background-image: url("./condorental-clone-welcome.PNG"); }
@@ -794,49 +802,70 @@ button {
   animation: imageCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
   width: 407px;
   height: 198px;
-  background-size: cover;
-  background-position: center;
   margin: 1rem auto;
   border-radius: 1px;
   display: flex;
+  background-repeat: no-repeat;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  background-size: cover;
+  background-position: center; }
 
 #projects .condo-rental-clone-images {
   animation: groupImgCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
   width: 407px;
   height: 198px;
-  background-size: cover;
-  background-position: center;
   margin: 1rem auto;
   border-radius: 1px;
   display: flex;
+  background-repeat: no-repeat;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  background-size: cover;
+  background-position: center; }
+
+#projects .trail-buddy-images {
+  animation: tbIMGCarousel 10s infinite cubic-bezier(0.23, 1, 0.32, 1);
+  width: 407px;
+  height: 407px;
+  margin: 1rem auto;
+  border-radius: 1px;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  align-items: center;
+  background-size: contain;
+  background-position: center; }
 
 #projects .project-head {
   display: flex;
   justify-content: flex-start; }
 
-#projects #blife-github, #projects #blife-link, #projects #condorental-github, #projects #condorental-link {
+#projects #blife-github, #projects #blife-link, #projects #condorental-github, #projects #condorental-link, #projects #trailbuddy-github {
   margin-left: 1rem; }
-  #projects #blife-github:hover, #projects #blife-link:hover, #projects #condorental-github:hover, #projects #condorental-link:hover {
+  #projects #blife-github:hover, #projects #blife-link:hover, #projects #condorental-github:hover, #projects #condorental-link:hover, #projects #trailbuddy-github:hover {
     color: green; }
 
 @media (max-width: 736px) {
-  #projects .condo-rental-clone-images, #projects .life-inbalanceimages {
+  #projects .condo-rental-clone-images, #projects .life-inbalanceimages, #projects .trail-buddy-images {
     height: 175px;
-    width: 359px; } }
+    width: 359px; }
+  #projects .trail-buddy-images {
+    height: 359px; } }
 
 @media (max-width: 536px) {
-  #projects .condo-rental-clone-images, #projects .life-inbalanceimages {
+  #projects .condo-rental-clone-images, #projects .life-inbalanceimages, #projects .trail-buddy-images {
     height: 150px;
-    width: 308px; } }
+    width: 308px; }
+  #projects .trail-buddy-images {
+    height: 308px; } }
 
 @media (max-width: 450px) {
-  #projects .condo-rental-clone-images, #projects .life-inbalanceimages {
+  #projects .condo-rental-clone-images, #projects .life-inbalanceimages, #projects .trail-buddy-images {
     height: 100px;
-    width: 211px; } }
+    width: 211px; }
+  #projects .trail-buddy-images {
+    height: 211px; } }
 
 #contact ul.icons {
   position: absolute;
